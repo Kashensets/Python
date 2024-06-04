@@ -1,3 +1,4 @@
+
 import random
 import getpass
 
@@ -107,5 +108,6 @@ def uzmini_skaitli():
             for i, speletajs in enumerate(speletaji):
                 print(f"{speletaji[i]} izvēlētais skaitlis bija {uzminamie_skaitli[i]}.")
 
+#print("Esi sveicināts spēlē "Uzmini skaitli!"!")
 # Palaiž spēli
 uzmini_skaitli()
