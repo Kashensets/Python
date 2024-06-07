@@ -4,16 +4,16 @@ import getpass
 
 def rādīt_instrukciju():
     instrukcija = """
-    -------------------------
-            Uzmini skaitli
-    -------------------------
+    --------------------------------------------
+            Spēle: "Uzmini skaitli"
+    --------------------------------------------
     Spēles noteikumi:
-    1. Jums tiks piedāvāts izvēlēties spēlētāju skaitu (1 vai 2).
-    2. Ievadiet minēšanas diapazonu un mēģinājumu skaitu.
+    1. Izvēlieties spēlētāju skaitu (1 vai 2). Ja izvēlēsieties 1, tad spēlēsiet pret datoru. 
+    2. Ievadiet minēšanas diapazonu (piem. 1-100) un mēģinājumu skaitu (piem. 10).
     3. Ja spēlē divi spēlētāji, katrs izvēlas savu skaitli, kuru pretiniekam jāuzmin.
-    4. Ja spēlē viens spēlētājs, dators izvēlēsies skaitli, kuru jāuzmin.
+    4. Ja spēlē viens spēlētājs, dators izvēlēsies skaitli, kuru spēlētājam jāuzmin.
     5. Jūs minat skaitli, kamēr beidzas mēģinājumi vai kāds no spēlētājiem uzmin.
-    6. Tiek paziņots uzvarētājs vai parādīts pareizais skaitlis, ja neviens neuzmin.
+    6. Uzvarētājis ir tas kurš pirmais uzmin pretinieka skaitli ar vismazāko mēģinājumu skaitu.
 
     Veiksmi!
     """
@@ -42,6 +42,7 @@ def ievadi_noslēpto_skaitli(jautajums, min_diapazons, max_diapazons):
             print("Lūdzu ievadi derīgu skaitli.")
 
 def uzmini_skaitli():
+    rādīt_instrukciju()
     # Izvēlas spēlētāju skaitu
     while True:
         try:
